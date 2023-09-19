@@ -1,0 +1,35 @@
+name: core
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  firebase_core: ^2.10.0
+  freezed_annotation: ^2.2.0
+  get_it: ^7.2.0
+  injectable: ^2.1.1
+  flutter_bloc: ^8.1.2
+  json_annotation: ^4.8.0
+  loading_animation_widget: ^1.2.0+4
+  uuid: ^3.0.7
+  firebase_analytics: ^10.4.3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  freezed: ^2.3.2
+  build_runner: ^2.3.3
+  injectable_generator: ^2.1.5
+  json_serializable: ^6.6.1
+
+flutter:
+  uses-material-design: true
