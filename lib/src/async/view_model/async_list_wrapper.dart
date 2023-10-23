@@ -1,6 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 import '../../../core.dart';
+import 'list_wrapper.dart';
 
 part 'async_list_wrapper.freezed.dart';
 

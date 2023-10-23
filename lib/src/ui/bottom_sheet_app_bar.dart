@@ -72,3 +72,38 @@ class BottomSheetAppBar extends StatelessWidget {
     );
   }
 }
+
+class BottomSheetActionText extends StatelessWidget {
+  final String text;
+  final VoidCallback? onTap;
+  final Color? color;
+
+  const BottomSheetActionText(
+    this.text, {
+    Key? key,
+    this.onTap,
+    this.color,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        customBorder: const CircleBorder(),
+        child: Container(
+          padding: const EdgeInsets.all(4),
+          alignment: Alignment.center,
+          child: Text(
+            text,
+            style: TextStyle(
+              fontSize: 14,
+              color: color ?? Theme.of(context).errorColor,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
