@@ -14,6 +14,14 @@ abstract class Async<T> implements _$Async<T> {
 
   const factory Async.fail(AppException exception) = Fail<T>;
 
+  Async<T> dependOn(Async input) {
+    return input.map(
+      loading: (_) => const Async.loading(),
+      fail: (_) => Async.fail(_.exception),
+      success: (_) => this,
+    );
+  }
+
   T? call() {
     if (this is Loading) {
       return (this as Loading).data;

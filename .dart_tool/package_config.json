@@ -122,6 +122,18 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "connectivity_plus",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/connectivity_plus-5.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "connectivity_plus_platform_interface",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/connectivity_plus_platform_interface-1.2.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "convert",
       "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/convert-3.1.1",
       "packageUri": "lib/",
@@ -146,10 +158,22 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "dbus",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/dbus-0.7.8",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
       "name": "fake_async",
       "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/fake_async-1.3.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "ffi",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/ffi-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "file",
@@ -190,6 +214,24 @@
     {
       "name": "firebase_core_web",
       "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/firebase_core_web-2.6.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "firebase_remote_config",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/firebase_remote_config-4.2.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "firebase_remote_config_platform_interface",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/firebase_remote_config_platform_interface-1.4.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "firebase_remote_config_web",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/firebase_remote_config_web-1.4.4",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -362,6 +404,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "nm",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/nm-0.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "package_config",
       "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/package_config-2.1.0",
       "packageUri": "lib/",
@@ -372,6 +420,36 @@
       "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/path-1.8.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "path_provider_linux",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "path_provider_platform_interface",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/path_provider_platform_interface-2.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "path_provider_windows",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/path_provider_windows-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "petitparser",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/petitparser-5.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "platform",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/platform-3.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "plugin_platform_interface",
@@ -404,10 +482,58 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "qonversion_flutter",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/qonversion_flutter-7.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "recase",
       "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/recase-4.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "shared_preferences",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/shared_preferences-2.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "shared_preferences_android",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/shared_preferences_android-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "shared_preferences_foundation",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.3.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "shared_preferences_linux",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/shared_preferences_linux-2.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "shared_preferences_platform_interface",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/shared_preferences_platform_interface-2.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "shared_preferences_web",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/shared_preferences_web-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "shared_preferences_windows",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/shared_preferences_windows-2.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "shelf",
@@ -518,6 +644,24 @@
       "languageVersion": "2.15"
     },
     {
+      "name": "win32",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/win32-5.0.9",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "xdg_directories",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/xdg_directories-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "xml",
+      "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/xml-6.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "yaml",
       "rootUri": "file:///Users/thanhnamitit/.pub-cache/hosted/pub.dev/yaml-3.1.1",
       "packageUri": "lib/",
@@ -527,10 +671,10 @@
       "name": "core",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-07-23T18:11:54.033727Z",
+  "generated": "2023-11-03T09:44:29.757320Z",
   "generator": "pub",
   "generatorVersion": "3.0.1"
 }

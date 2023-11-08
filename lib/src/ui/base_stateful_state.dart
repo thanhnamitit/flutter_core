@@ -3,8 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
 
-import '../async/async_support_mixin.dart';
-
 final getIt = GetIt.instance;
 
 abstract class BaseStatefulState<
@@ -39,7 +37,10 @@ abstract class BaseStatefulState<
   @override
   void initState() {
     super.initState();
-    _bloc = createBloc()..setup();
+    _bloc = createBloc();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      bloc.setup();
+    });
   }
 
   @override
