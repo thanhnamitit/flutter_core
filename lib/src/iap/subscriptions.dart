@@ -11,16 +11,25 @@ class IAP with _$IAP {
   const IAP._();
 
   const factory IAP({
+    @Default('main') String mainOfferName,
     @Default(Async.loading()) Async<Map<String, QOffering>> offers,
     Async<Map<String, QEntitlement>>? purchased,
     @Default(false) bool cachedIsPremium,
   }) = _IAP;
 
-  String get offerName => 'main';
+  List<QProduct>? get _mainOffer => offers()?[mainOfferName]?.products;
 
-  List<QProduct> get offerNotNull => offers()?[offerName]?.products ?? [];
+  List<QProduct>? get _fallbackOffer => offers()?['main']?.products;
+
+  List<QProduct> get offerNotNull => _mainOffer ?? _fallbackOffer ?? [];
+
+  Map<String, QEntitlement> get purchasedNotNull => purchased?.call() ?? {};
 
   bool needToRetry() {
     return offers is Fail || purchased is Fail;
+  }
+
+  bool get everythingReady {
+    return offers is Success && purchased is Success;
   }
 }

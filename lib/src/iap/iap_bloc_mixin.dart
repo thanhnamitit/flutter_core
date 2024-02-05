@@ -24,8 +24,9 @@ mixin IAPBlocMixin<S extends IAPState<S>> on BaseCubit<S> {
     );
   }
 
+  void setupMainOffer(String name) {}
+
   void initIAP() {
-    _newIAP(_iap.copyWith(cachedIsPremium: iapRepository.cachedPremium));
     restoreSubscriptions();
     getOffers();
   }
@@ -37,6 +38,7 @@ mixin IAPBlocMixin<S extends IAPState<S>> on BaseCubit<S> {
   }
 
   void restoreSubscriptions() {
+    _newIAP(_iap.copyWith(cachedIsPremium: iapRepository.cachedPremium));
     execute(iapRepository.restoreSubscriptions()).listen((_) {
       _newPurchasedEntitlements(_);
     });

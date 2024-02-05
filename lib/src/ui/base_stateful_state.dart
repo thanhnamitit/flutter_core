@@ -8,7 +8,7 @@ final getIt = GetIt.instance;
 abstract class BaseStatefulState<
     WIDGET extends StatefulWidget,
     BLOC extends BaseCubit<STATE>,
-    STATE> extends State<WIDGET> with AsyncSupport {
+    STATE> extends State<WIDGET> with AsyncSupport, WebSupport {
   BLOC? _bloc;
 
   BLOC get bloc => _bloc!;

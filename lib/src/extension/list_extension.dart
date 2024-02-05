@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 extension ListExtension<T> on List<T?> {
   T? getOrNull(int index) {
     return index < 0 || index >= length ? null : toList()[index];
@@ -24,5 +26,21 @@ extension ListExtension<T> on List<T?> {
       }
     }
     return -1;
+  }
+}
+
+extension InsertDividersExtension on List<Widget> {
+  List<Widget> insertDividers({required Widget divider}) {
+    List<Widget> listWithDividers = [];
+
+    for (var i = 0; i < length; i++) {
+      listWithDividers.add(this[i]);
+
+      if (i < length - 1) {
+        listWithDividers.add(divider);
+      }
+    }
+
+    return listWithDividers;
   }
 }

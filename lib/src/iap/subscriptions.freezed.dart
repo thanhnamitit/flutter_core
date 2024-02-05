@@ -16,6 +16,7 @@ final _privateConstructorUsedError = UnsupportedError(
 
 /// @nodoc
 mixin _$IAP {
+  String get mainOfferName => throw _privateConstructorUsedError;
   Async<Map<String, QOffering>> get offers =>
       throw _privateConstructorUsedError;
   Async<Map<String, QEntitlement>>? get purchased =>
@@ -32,7 +33,8 @@ abstract class $IAPCopyWith<$Res> {
       _$IAPCopyWithImpl<$Res, IAP>;
   @useResult
   $Res call(
-      {Async<Map<String, QOffering>> offers,
+      {String mainOfferName,
+      Async<Map<String, QOffering>> offers,
       Async<Map<String, QEntitlement>>? purchased,
       bool cachedIsPremium});
 
@@ -52,11 +54,16 @@ class _$IAPCopyWithImpl<$Res, $Val extends IAP> implements $IAPCopyWith<$Res> {
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? mainOfferName = null,
     Object? offers = null,
     Object? purchased = freezed,
     Object? cachedIsPremium = null,
   }) {
     return _then(_value.copyWith(
+      mainOfferName: null == mainOfferName
+          ? _value.mainOfferName
+          : mainOfferName // ignore: cast_nullable_to_non_nullable
+              as String,
       offers: null == offers
           ? _value.offers
           : offers // ignore: cast_nullable_to_non_nullable
@@ -101,7 +108,8 @@ abstract class _$$_IAPCopyWith<$Res> implements $IAPCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {Async<Map<String, QOffering>> offers,
+      {String mainOfferName,
+      Async<Map<String, QOffering>> offers,
       Async<Map<String, QEntitlement>>? purchased,
       bool cachedIsPremium});
 
@@ -120,11 +128,16 @@ class __$$_IAPCopyWithImpl<$Res> extends _$IAPCopyWithImpl<$Res, _$_IAP>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? mainOfferName = null,
     Object? offers = null,
     Object? purchased = freezed,
     Object? cachedIsPremium = null,
   }) {
     return _then(_$_IAP(
+      mainOfferName: null == mainOfferName
+          ? _value.mainOfferName
+          : mainOfferName // ignore: cast_nullable_to_non_nullable
+              as String,
       offers: null == offers
           ? _value.offers
           : offers // ignore: cast_nullable_to_non_nullable
@@ -145,11 +158,15 @@ class __$$_IAPCopyWithImpl<$Res> extends _$IAPCopyWithImpl<$Res, _$_IAP>
 
 class _$_IAP extends _IAP with DiagnosticableTreeMixin {
   const _$_IAP(
-      {this.offers = const Async.loading(),
+      {this.mainOfferName = 'main',
+      this.offers = const Async.loading(),
       this.purchased,
       this.cachedIsPremium = false})
       : super._();
 
+  @override
+  @JsonKey()
+  final String mainOfferName;
   @override
   @JsonKey()
   final Async<Map<String, QOffering>> offers;
@@ -161,7 +178,7 @@ class _$_IAP extends _IAP with DiagnosticableTreeMixin {
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'IAP(offers: $offers, purchased: $purchased, cachedIsPremium: $cachedIsPremium)';
+    return 'IAP(mainOfferName: $mainOfferName, offers: $offers, purchased: $purchased, cachedIsPremium: $cachedIsPremium)';
   }
 
   @override
@@ -169,6 +186,7 @@ class _$_IAP extends _IAP with DiagnosticableTreeMixin {
     super.debugFillProperties(properties);
     properties
       ..add(DiagnosticsProperty('type', 'IAP'))
+      ..add(DiagnosticsProperty('mainOfferName', mainOfferName))
       ..add(DiagnosticsProperty('offers', offers))
       ..add(DiagnosticsProperty('purchased', purchased))
       ..add(DiagnosticsProperty('cachedIsPremium', cachedIsPremium));
@@ -179,6 +197,8 @@ class _$_IAP extends _IAP with DiagnosticableTreeMixin {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_IAP &&
+            (identical(other.mainOfferName, mainOfferName) ||
+                other.mainOfferName == mainOfferName) &&
             (identical(other.offers, offers) || other.offers == offers) &&
             (identical(other.purchased, purchased) ||
                 other.purchased == purchased) &&
@@ -187,8 +207,8 @@ class _$_IAP extends _IAP with DiagnosticableTreeMixin {
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, offers, purchased, cachedIsPremium);
+  int get hashCode => Object.hash(
+      runtimeType, mainOfferName, offers, purchased, cachedIsPremium);
 
   @JsonKey(ignore: true)
   @override
@@ -199,11 +219,14 @@ class _$_IAP extends _IAP with DiagnosticableTreeMixin {
 
 abstract class _IAP extends IAP {
   const factory _IAP(
-      {final Async<Map<String, QOffering>> offers,
+      {final String mainOfferName,
+      final Async<Map<String, QOffering>> offers,
       final Async<Map<String, QEntitlement>>? purchased,
       final bool cachedIsPremium}) = _$_IAP;
   const _IAP._() : super._();
 
+  @override
+  String get mainOfferName;
   @override
   Async<Map<String, QOffering>> get offers;
   @override

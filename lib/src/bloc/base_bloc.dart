@@ -13,9 +13,9 @@ mixin StreamSubscriptionContainer {
   }
 
   base_bloc.Future closeAllSubscriptions() async {
-    _subscriptions.forEach((element) {
+    for (var element in _subscriptions) {
       element?.cancel();
-    });
+    }
     _subscriptions.clear();
   }
 }

@@ -32,7 +32,7 @@ extension GetItInjectableX on _i1.GetIt {
     final module = _$Module();
     gh.factory<_i3.IAPPreferences>(
         () => _i3.IAPPreferences(gh<_i4.SharedPreferences>()));
-    gh.factory<_i5.Qonversion>(() => module.qonversion);
+    gh.lazySingleton<_i5.Qonversion>(() => module.qonversion);
     gh.lazySingleton<_i6.IAPRepository>(() => _i7.IAPRepositoryImpl(
           gh<_i5.Qonversion>(),
           gh<_i6.IAPPreferences>(),
