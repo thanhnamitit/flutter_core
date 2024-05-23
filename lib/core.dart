@@ -1,3 +1,5 @@
+export 'package:dart_scope_functions/dart_scope_functions.dart';
+
 export 'src/analytics/firebase_analytics.dart';
 export 'src/async/async_support_mixin.dart';
 export 'src/async/view_model/async.dart';
@@ -8,6 +10,7 @@ export 'src/di/injector.dart';
 export 'src/exception/safe_result.dart';
 export 'src/extension/list_extension.dart';
 export 'src/extension/remote_config_ext.dart';
+export 'src/extension/stream_ext.dart';
 export 'src/functional/app_exception.dart';
 export 'src/functional/pair.dart';
 export 'src/iap/iap.dart';
